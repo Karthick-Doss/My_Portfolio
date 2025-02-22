@@ -396,7 +396,7 @@ img {
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
+/* .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
@@ -448,8 +448,123 @@ margin-left: 5rem;
   height: 2rem;
   width: 6rem;
   background-color: var(--first-color);
+} */
+
+/* General form styling */
+.contact__container_form {
+  margin-left: 5rem;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Input fields */
+.contact__container_input,
+.contact__container_msg {
+  height: 3rem;
+  width: 26rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--second-color);
+  padding: 1rem;
+  font-size: var(--normal-font-size);
+  transition: 0.3s ease-in-out;
+}
+
+/* Textarea */
+.contact__container_msg {
+  height: 5rem;
+  resize: none;
+}
+
+/* Input focus effect */
+.contact__container_input:focus,
+.contact__container_msg:focus {
+  border-color: var(--first-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.contact__container_btn {
+  border-radius: 10px;
+  height: 2.5rem;
+  width: 8rem;
+  background-color: var(--first-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.contact__container_btn:hover {
+  background-color: var(--first-color-dark);
+  transform: scale(1.05);
+}
+
+/* Aligning form elements */
+.contact-mail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact_options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .contact__container_form {
+    margin-left: 2rem;
+    padding: 1.5rem;
+  }
+  .contact__container_input,
+  .contact__container_msg {
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container_form {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .contact__container_input,
+  .contact__container_msg {
+    width: 90%;
+  }
+  .contact__container_btn {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-mail-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_options {
+    gap: 1rem;
+  }
+  .contact__container_input,
+  .contact__container_msg {
+    width: 100%;
+  }
+  .contact__container_btn {
+    width: 100%;
+  }
+}
 
 
 
