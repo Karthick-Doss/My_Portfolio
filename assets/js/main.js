@@ -55,3 +55,16 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+function formatMailto() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("mail").value;
+    var message = document.getElementById("comment").value;
+    console.log(name);
+    var fullMessage = name + "\n"  + message;
+    
+    var mailtoLink = "mailto:karthickdoss333@gmail.com?body=" + encodeURIComponent(fullMessage);
+    window.location.href = mailtoLink;
+    return false; 
+}// Prevent 
+
