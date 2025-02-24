@@ -600,6 +600,10 @@ margin-left: 5rem;
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
+.footer__contact{
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--smaller-font-size);
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
